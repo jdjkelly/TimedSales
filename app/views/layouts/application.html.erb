@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tout.io | Timed Sales</title>
+  <%= stylesheet_link_tag 'foundation' %>
+  <%= javascript_include_tag 'foundation' %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+  <div class="container">
+    <div id="header">
+      <div class="row">
+        <div class="twelve columns">
+          <h1><%= link_to 'Timed Sales', '/' %></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="six columns">
+          <p id="login-link">
+            <% if current_shop %>
+                <span class="note">current shop</span> <%= link_to current_shop.url, "https://#{current_shop.url}", :class => 'shop_name' %> <span class="note">|</span>
+                <%= link_to 'logout', logout_path %>
+            <% end %>
+          </p>
+        </div>
+      </div>
+
+      <div id="navigation" class="row">
+
+        <dl class="nice tabs">
+          <%= tab :index, {:controller => '/home'}, :label => 'Home' %>
+        </dl>
+        
+        <!-- Flash error & notice-->
+        <% if flash[:error] %> <div id="flasherrors"><%= flash[:error] %></div><% end %>
+        <% if flash[:notice] %><div id="flashnotices"><%= flash[:notice] %></div><% end %>
+      
+        <!-- begin div.main-->
+        <div id="main">
+          <%= yield %>
+        </div>
+        <!-- end div.main -->
+      </div>
+  </div>
+</body>
+</html>
