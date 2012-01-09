@@ -1,0 +1,40 @@
+#ui-datepicker-div {
+	background:#fff;
+		-webkit-border-radius: 0 0 4px 4px;
+  		-moz-border-radius: 0 0 4px 4px;
+  	border-radius: 0 0 4px 4px;
+  		-moz-background-clip: padding;
+  		-webkit-background-clip: padding-box;
+  	background-clip: padding-box;
+  	border: 1px solid #aaaaaa;
+  	position: absolute;
+  	top: 29px;
+  	left: 0;
+  		-webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  		-moz-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  		-o-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  	box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+  		z-index: 999;
+}
+
+table.ui-datepicker-calendar {
+	border:none;
+	margin-bottom:0px;
+	padding:10px;
+}
+
+.ui-datepicker-header {
+	padding:10px;
+}
+
+.ui-datepicker-title {
+	text-align:center;
+}
+
+.ui-datepicker-prev {
+	float:left;
+}
+
+.ui-datepicker-next {
+	float:right;
+}

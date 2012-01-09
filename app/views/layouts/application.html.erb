@@ -2,8 +2,10 @@
 <html>
 <head>
   <title>Tout.io | Timed Sales</title>
-  <%= stylesheet_link_tag 'foundation' %>
-  <%= javascript_include_tag 'foundation' %>
+  <%= stylesheet_link_tag 'application' %>
+  <%= javascript_include_tag 'application' %>
+  <script type="text/javascript" src="http://use.typekit.com/lmz3kqc.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <%= csrf_meta_tags %>
 </head>
 
@@ -30,14 +32,17 @@
 
         <dl class="nice tabs">
           <%= tab :index, {:controller => '/home'}, :label => 'Home' %>
+          <%= tab :index, {:controller => '/sales', :action=> "new"}, :label => 'Sales' %>
         </dl>
+      </div>
+    </div>
         
         <!-- Flash error & notice-->
         <% if flash[:error] %> <div id="flasherrors"><%= flash[:error] %></div><% end %>
         <% if flash[:notice] %><div id="flashnotices"><%= flash[:notice] %></div><% end %>
       
         <!-- begin div.main-->
-        <div id="main">
+        <div id="main" class="row">
           <%= yield %>
         </div>
         <!-- end div.main -->

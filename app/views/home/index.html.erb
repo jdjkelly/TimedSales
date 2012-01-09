@@ -1,35 +1,75 @@
-
-<h2>Some of your products</h2>
-
+<div class="four columns">
 <% if @products.blank? %>
 
-  <em class="note">There are no products in your store.</em>
+  <select data-placeholder="Choose a Product..." class="chzn-select" style="width:350px;" tabindex="2">
+    <option value=""></option> 
+    <option value="United States">United States</option>    
+  </select>
 
 <% else %>
-
-        <table>
+  <%= form_tag nil, {:class => "nice"} do %> 
+    
+    <%= select_tag "product", options_from_collection_for_select(@products, "id", "title"), :class => "chzn-select", :id => "new-product", :include_blank => true, "data-remote" => true, "data-url" => "/products/get_variants", "data-type" => :json %>
+    
+    <%= select_tag "variants", nil, :class => "chzn-select", :id => "new-variant", :include_blank => true, :disabled => true %>
+    
+    <div class="row">
+      <div class="six columns">
+        <%= text_field_tag "start_date", nil, :id => "start_date", :class => "input-text small", :placeholder => "Start Date" %>
+      </div>
+      <div class="six columns">
+        <%= text_field_tag "start_time", nil, :id => "start_time", :class => "input-text small", :placeholder => "Start Time" %>
+      </div>
+    </div>
+    <div class="row">
+      <div class="six columns">
+        <%= text_field_tag "end_date", nil, :id => "end_date", :class => "input-text small", :placeholder => "End Date" %>
+      </div>
+      <div class="six columns">
+        <%= text_field_tag "end_time", nil, :id => "end_time", :class => "input-text small", :placeholder => "End Time" %>
+      </div>
+    </div>
+  <% end %>
+<% end %>
+</div>
+<div class="eight columns">
+<table>
           <thead>
             <tr>
-              <th>Product Name</th>
-              <th>Type</th>
-              <th>Vendor</th>
-              <th>Price</th>
+              <th>Table Header</th>
+              <th>Table Header</th>
+              <th>Table Header</th>
+              <th>Table Header</th>
             </tr>
           </thead>
           <tbody>
-
-          <% @products.each do |product| %>
-      
             <tr>
-              <td><%= link_to product.title, :controller => "products", :action => "show", :id => product %></td>
-              <td><%= product.product_type %></td>
-              <td><%= product.vendor %></td>
-              <td><%= product.price_range %> <%= current_shop.shop.currency %></td>
+              <td>Content</td>
+              <td>This is longer content</td>
+              <td>Content</td>
+              <td>Content</td>
             </tr>
-         
-          <% end %>
-          
+            <tr>
+              <td>Content</td>
+              <td>This is longer content</td>
+              <td>Content</td>
+              <td>Content</td>
+            </tr>
+            <tr>
+              <td>Content</td>
+              <td>This is longer content</td>
+              <td>Content</td>
+              <td>Content</td>
+            </tr>
+            <tr>
+              <td>Content</td>
+              <td>This is longer content</td>
+              <td>Content</td>
+              <td>Content</td>
+            </tr>
           </tbody>
         </table>
+</div>
 
-<% end %>
+  
+

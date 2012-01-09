@@ -1,9 +1,6 @@
 Timedsales::Application.routes.draw do
   resources :sales
 
-  match 'welcome'            => 'home#welcome'
-  match 'products'           => 'products#index',     :as => :index
-  match 'products/:id'       => 'products#show',      :as => :show
   match 'login'              => 'login#index',        :as => :login
   match 'login/authenticate' => 'login#authenticate', :as => :authenticate
   match 'login/finalize'     => 'login#finalize',     :as => :finalize
@@ -65,5 +62,5 @@ Timedsales::Application.routes.draw do
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id(.:format)))'
+  match ':controller(/:action(/:id(.:format)))'
 end

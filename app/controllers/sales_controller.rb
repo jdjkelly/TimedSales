@@ -1,24 +1,12 @@
 class SalesController < ApplicationController
-  # GET /sales
-  # GET /sales.json
-  def index
-    @sales = Sale.all
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @sales }
-    end
-  end
+  respond_to :html, :js, :json
 
   # GET /sales/new
   # GET /sales/new.json
   def new
     @sale = Sale.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @sale }
-    end
+    respond_with(@sale)
   end
 
   # POST /sales
