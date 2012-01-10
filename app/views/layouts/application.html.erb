@@ -13,15 +13,15 @@
   <div class="container">
     <div id="header">
       <div class="row">
-        <div class="twelve columns">
+        <div class="six columns">
           <h1><%= link_to 'Timed Sales', '/' %></h1>
         </div>
-      </div>
-      <div class="row">
+      
+      
         <div class="six columns">
           <p id="login-link">
             <% if current_shop %>
-                <span class="note">current shop</span> <%= link_to current_shop.url, "https://#{current_shop.url}", :class => 'shop_name' %> <span class="note">|</span>
+                <span class="note">Logged in as</span> <%= link_to current_shop.url, "https://#{current_shop.url}", :class => 'shop_name' %> <span class="note">|</span>
                 <%= link_to 'logout', logout_path %>
             <% end %>
           </p>
@@ -29,8 +29,7 @@
       </div>
 
       <div id="navigation" class="row">
-
-        <dl class="nice tabs">
+        <dl class="nice contained tabs">
           <%= tab :index, {:controller => '/home'}, :label => 'Home' %>
           <%= tab :index, {:controller => '/sales', :action=> "new"}, :label => 'Sales' %>
         </dl>

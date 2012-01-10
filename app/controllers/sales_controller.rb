@@ -1,6 +1,6 @@
 class SalesController < ApplicationController
 
-  respond_to :html, :js, :json
+
 
   # GET /sales/new
   # GET /sales/new.json

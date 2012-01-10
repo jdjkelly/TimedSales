@@ -10,6 +10,7 @@ $(document).ready(function() {
         select.removeAttr('disabled');
         select.children().remove();
         $.each(data.variants, function(index) {
+          $("<option/>").appendTo(select);
         	$("<option/>").val(data.variants[index].id).text(data.variants[index].title).appendTo(select);
         });
         select.trigger("liszt:updated");
@@ -19,14 +20,23 @@ $(document).ready(function() {
       }
     });
 
-    // init date pickers
-    $("#start_date, #end_date").datepicker();
+  $('#new-variant').bind('ajax:success', function(evt, data, status, xhr){
+      var input = $('#new-price');
 
-    //init time pickers
-    $("#start_time, #end_time").timePicker({
-    	startTime: "00.00", // Using string. Can take string or Date object.
-  		show24Hours: false,
-  		separator: '.',
-  		step: 15});
+      if (data !== null) {
+        ... insert it into placeholder
+      }
+      // var selected = document.getElementById("new-variant").selectedIndex;
+  });
+
+  // init date pickers
+  $("#start_date, #end_date").datepicker();
+
+  //init time pickers
+  $("#start_time, #end_time").timePicker({
+	  startTime: "00.00", // Using string. Can take string or Date object.
+	  show24Hours: false,
+  	separator: '.',
+  	step: 15});
 
 });

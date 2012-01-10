@@ -27,6 +27,11 @@ table.ui-datepicker-calendar {
 	padding:10px;
 }
 
+.ui-datepicker-header a:hover span {
+  cursor:pointer;
+  text-decoration:underline;
+}
+
 .ui-datepicker-title {
 	text-align:center;
 }
@@ -38,3 +43,17 @@ table.ui-datepicker-calendar {
 .ui-datepicker-next {
 	float:right;
 }
+
+.ui-datepicker-calendar td {
+  text-align:center;
+}
+
+.ui-datepicker-calendar td:hover {
+  background:#00A6FC;
+  cursor:pointer;
+}
+
+.ui-datepicker-calendar td:hover a {
+  color:#fff;
+}
+

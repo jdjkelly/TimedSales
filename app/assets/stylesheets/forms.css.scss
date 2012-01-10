@@ -4,8 +4,18 @@
 
 .chzn-container {
 	margin:10px 0px;
+	font-family: 'Lucida Grande';
+font-size: 13px;
 }
 
 .input-text {
 	width:100%;
+}
+
+#start_time, #start_date, #end_time, #end_date, #sale_price {
+	margin: 10px 0px;
+}
+
+.savebutton {
+	margin-top:39px;
 }
