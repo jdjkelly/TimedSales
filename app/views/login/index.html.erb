@@ -1,15 +1,13 @@
-<h1>Install</h1>
+<div class="login-form six columns offset-by-three">
 
-<p>Install this app in a shop to get access to its private admin data.</p>
+<h1>Timed Sales</h1>
 
-<p style="padding-bottom: 1em"><span class="hint">Don&rsquo;t have a shop to install your app in handy? <a href="https://app.shopify.com/services/partners/api_clients/test_shops">Create a test shop.</a></span></p>
+<%= form_tag '/login/authenticate', :class => "nice" do %>
+  <label for='shop'><strong>Please enter the URL of your store</strong>	</label>
 
-<%= form_tag '/login/authenticate' do %>
-  <label for='shop'><strong>The URL of the Shop</strong>
-    <span class="hint">(or just the subdomain if it&rsquo;s at myshopify.com)</span>
-  </label>
-  <p>
-    <%= text_field_tag 'shop', nil, {:size => 45} %>
-    <%= submit_tag 'Install' %>
-  </p>
+    <%= text_field_tag 'shop', nil, {:class => "input-text medium", "placeholder" => "store.myshopify.com"} %>
+    <a href="#" class="blue button radius form-submit">Submit</a>
+
 <% end %>
+
+</div>

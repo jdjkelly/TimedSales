@@ -8,7 +8,7 @@ class ProductsController < ApplicationController
     respond_with(@variants)
   end
   def get_pricing
-    @pricing = ShopifyAPI::Product.find(params[:variant])
+    @pricing = ShopifyAPI::Variant.find(params[:variant])
     respond_with(@pricing)
   end
 end

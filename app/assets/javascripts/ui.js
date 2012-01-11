@@ -20,23 +20,49 @@ $(document).ready(function() {
       }
     });
 
+  // Process AJAX request when variant is selected (adds exiting price to price input)
   $('#new-variant').bind('ajax:success', function(evt, data, status, xhr){
-      var input = $('#new-price');
+      var input = $('#sale_price');
 
       if (data !== null) {
-        ... insert it into placeholder
+        input.val("$" + data.price);
       }
       // var selected = document.getElementById("new-variant").selectedIndex;
   });
-
-  // init date pickers
-  $("#start_date, #end_date").datepicker();
 
   //init time pickers
   $("#start_time, #end_time").timePicker({
 	  startTime: "00.00", // Using string. Can take string or Date object.
 	  show24Hours: false,
   	separator: '.',
-  	step: 15});
+  	step: 30});
 
+  //bind login button to form submit
+  $(".login-form .form-submit").bind("click", function() {
+    $(".login-form").animate(
+      {
+        "top":  $(document).scrollTop() - 100 + 'px',
+        "opacity": 0
+      },   
+      700 / 2, 
+      function ()
+      {
+        $(".login-form").css({'top': -100, 'opacity': 1, 'visibility': 'hidden'});   
+      }
+    ).children("form").submit();
+  });
+
+  //init date picker
+  var dates = $( "#start_date, #end_date" ).datepicker({ 
+    onSelect: function( selectedDate ) {
+      var option = this.id == "start_date" ? "minDate" : "maxDate",
+        instance = $( this ).data( "datepicker" ),
+        date = $.datepicker.parseDate(
+          instance.settings.dateFormat ||
+          $.datepicker._defaults.dateFormat,
+          selectedDate, instance.settings );
+      dates.not( this ).datepicker( "option", option, date );
+    }
+  });
+  
 });

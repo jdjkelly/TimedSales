@@ -28,17 +28,19 @@
         </div>
       </div>
 
-      <div id="navigation" class="row">
+      <!-- <div id="navigation" class="row">
         <dl class="nice contained tabs">
           <%= tab :index, {:controller => '/home'}, :label => 'Home' %>
           <%= tab :index, {:controller => '/sales', :action=> "new"}, :label => 'Sales' %>
         </dl>
-      </div>
+      </div>-->
     </div>
         
+        <div class="row">
         <!-- Flash error & notice-->
-        <% if flash[:error] %> <div id="flasherrors"><%= flash[:error] %></div><% end %>
-        <% if flash[:notice] %><div id="flashnotices"><%= flash[:notice] %></div><% end %>
+        <% if flash[:error] %> <div id="flasherrors" class="alert-box warning"><%= flash[:error] %><a href="" class="close">×</a></div><% end %>
+        <% if flash[:notice] %><div id="flashnotices"  class="alert-box"><%= flash[:notice] %><a href="" class="close">×</a></div><% end %>
+        </div>
       
         <!-- begin div.main-->
         <div id="main" class="row">
