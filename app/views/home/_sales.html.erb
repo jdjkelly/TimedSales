@@ -1,0 +1,38 @@
+
+<% if @sales.blank? %>
+  
+<% else %>
+<hr/>
+<div class="row">
+  <div class="twelve columns upcoming">
+      <h4>Upcoming Sales</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Variant</th>
+              <th>Start Date</th>
+              <th>End Date</th>
+              <th>Price</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @sales.each do |sale| %>
+            <tr>
+              <td><%= sale.product %></td>
+              <td><%= sale.variant %></td>
+              <td><%= !sale.start.nil? ? sale.start.to_datetime : nil %></td>
+              <td><%= !sale.end.nil? ? sale.end.to_datetime : nil %></td>
+              <td><%= sale.price %></td>
+              <td><a href="#" class="small white button radius editbutton">Edit</a></td>
+              <td><%= link_to "Delete", sale_path(sale), :remote => true, :method => :delete, :confirm => 'Are you sure?', :class => "small white button radius deletebutton" %></td>
+            </tr>
+            <% end %>
+          </tbody>
+        </table>
+  </div>
+ </div>
+<% end %>
+  

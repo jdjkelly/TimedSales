@@ -1,3 +1,5 @@
+/* Chosen */
+
 .chzn-select {
 	width:100%;
 }
@@ -8,14 +10,42 @@
 font-size: 13px;
 }
 
+/* Zurb customizations */
+
 .input-text {
 	width:100%;
 }
 
-#start_time, #start_date, #end_time, #end_date, #sale_price {
+input.mini, textarea.mini {
+width: 90px;
+}
+
+/* Misc */
+
+#start_time, #start_date, #end_time, #end_date, #sale_price, .add-on {
 	margin: 10px 0px;
 }
 
 .savebutton {
 	margin-top:39px;
+}
+
+.prepended .add-on {
+	position: relative;
+	background: whiteSmoke;
+	border: 1px solid #CCC;
+	float: left;
+	width: auto;
+	min-width: 16px;
+	height: 18px;
+	padding: 4px;
+	margin-right: -1px;
+	line-height: 18px;
+	color: #444;
+	text-align: center;
+	text-shadow: 0 1px 0 white;
+		-webkit-border-radius: 3px 0 0 3px;
+		-moz-border-radius: 3px 0 0 3px;
+	border-radius: 3px 0 0 3px;
+	border-image: initial;
 }

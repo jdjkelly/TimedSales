@@ -1,0 +1,20 @@
+<% if @sale.errors.any? %>
+
+  // Create a list of errors
+  var errors = $('<ul />');
+
+  <% @sale.errors.full_messages.each do |error| %>
+    errors.append('<li><%= escape_javascript(error) %></li>');
+  <% end %>
+
+  // Display errors before the form
+  $('<div id="flasherrors" class="alert-box warning"><%= flash[:error] %> />').html(errors).prependTo("#new_sale");
+
+<% else %>
+
+  $('<%= j(render(:partial => "sale", :object => @sale))%>').prependTo(".upcoming tbody").fadeIn();
+
+  // empty the form for new submission
+  form.find('input:text,textarea').val('');
+
+<% end %>

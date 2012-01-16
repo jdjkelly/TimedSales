@@ -2,39 +2,42 @@ $(document).ready(function() {
 	// init Chosen on selects
 	$('.chzn-select').chosen();
 
+  // Make sure that only integers can be entered in sale field
+  $('#sale_price').numeric({ negative: false }, function() { alert("Hey let's keep things positive around here."); });
+
 	// Process AJAX request when product is select
 	$("#new-product").bind('ajax:success', function(evt, data, status, xhr){
-      var select = $('#new-variant');
+    var select = $('#new-variant');
 
-      if (data !== null) {
-        select.removeAttr('disabled');
-        select.children().remove();
-        $.each(data.variants, function(index) {
-          $("<option/>").appendTo(select);
-        	$("<option/>").val(data.variants[index].id).text(data.variants[index].title).appendTo(select);
-        });
-        select.trigger("liszt:updated");
-      } else {
-        select.empty();
-        select.attr('disabled', 'disabled');
-      }
-    });
+    if (data !== null) {
+      select.removeAttr('disabled');
+      select.children().remove();
+      $.each(data.variants, function(index) {
+        $("<option/>").appendTo(select);
+      	$("<option/>").val(data.variants[index].id).text(data.variants[index].title).appendTo(select);
+      });
+      select.trigger("liszt:updated");
+    } else {
+      select.empty();
+      select.attr('disabled', 'disabled');
+    }
+  });
 
   // Process AJAX request when variant is selected (adds exiting price to price input)
   $('#new-variant').bind('ajax:success', function(evt, data, status, xhr){
       var input = $('#sale_price');
 
       if (data !== null) {
-        input.val("$" + data.price);
+        input.attr("placeholder", data.price);
       }
       // var selected = document.getElementById("new-variant").selectedIndex;
   });
 
   //init time pickers
   $("#start_time, #end_time").timePicker({
-	  startTime: "00.00", // Using string. Can take string or Date object.
+	  startTime: "00:00", // Using string. Can take string or Date object.
 	  show24Hours: false,
-  	separator: '.',
+  	separator: ':',
   	step: 30});
 
   //bind login button to form submit
@@ -64,5 +67,33 @@ $(document).ready(function() {
       dates.not( this ).datepicker( "option", option, date );
     }
   });
+
+  $(".savebutton").bind("click", function() {
+    $(this).parents("form").submit();
+
+    $("#new_sale").bind('ajax:success', function(evt, data, status, xhr){
+
+    if (data !== null) {
+      // select.removeAttr('disabled');
+      // select.children().remove();
+      // $.each(data.variants, function(index) {
+      //   $("<option/>").appendTo(select);
+      //   $("<option/>").val(data.variants[index].id).text(data.variants[index].title).appendTo(select);
+      // });
+      // select.trigger("liszt:updated");
+    // } else {
+    //   select.empty();
+    //   select.attr('disabled', 'disabled');
+    // }
+      alert(data)
+    }
+  });
+  })
+
+  $(".deletebutton").live('ajax:success', function(evt, data, status, xhr){
+    $(this).closest('tr').fadeOut();
+  });
+  
+  $('.upcoming table').tablesorter(); 
   
 });

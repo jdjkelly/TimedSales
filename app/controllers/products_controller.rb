@@ -1,4 +1,5 @@
 class ProductsController < ApplicationController
+  
 	around_filter :shopify_session
 
   respond_to :html, :json, :js
@@ -7,6 +8,7 @@ class ProductsController < ApplicationController
     @variants = ShopifyAPI::Product.find(params[:product])
     respond_with(@variants)
   end
+
   def get_pricing
     @pricing = ShopifyAPI::Variant.find(params[:variant])
     respond_with(@pricing)

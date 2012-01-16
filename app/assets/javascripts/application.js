@@ -9,4 +9,5 @@
 //= require jquery_ujs
 //= require foundation
 //= require chosen-jquery
+//= require jquery-tablesorter
 //= require_tree .

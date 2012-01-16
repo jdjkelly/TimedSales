@@ -1,7 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  name: MyString
+  product: MyString
+  variant: MyString
+  start: 2012-01-14 10:56:07
+  end: 2012-01-14 10:56:07
+  price: 
+  shop: 
 
 two:
-  name: MyString
+  product: MyString
+  variant: MyString
+  start: 2012-01-14 10:56:07
+  end: 2012-01-14 10:56:07
+  price: 
+  shop: 

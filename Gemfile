@@ -38,3 +38,4 @@ end
 gem 'shopify_app'
 gem 'zurb-foundation'
 gem 'chosen-rails'
+gem 'jquery-tablesorter'

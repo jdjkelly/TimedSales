@@ -11,21 +11,27 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120108155607) do
+ActiveRecord::Schema.define(:version => 20120115212945) do
 
   create_table "sales", :force => true do |t|
-    t.string   "name"
-    t.text     "description"
-    t.string   "product_id"
+    t.string   "product"
+    t.string   "variant"
+    t.datetime "start"
+    t.datetime "end"
+    t.decimal  "price"
     t.integer  "shop_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.decimal  "compare_at"
   end
 
+  add_index "sales", ["shop_id"], :name => "index_sales_on_shop_id"
+
   create_table "shops", :force => true do |t|
+    t.string   "api_url"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "url"
   end
 
 end
