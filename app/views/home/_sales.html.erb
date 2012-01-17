@@ -21,11 +21,11 @@
           <tbody>
             <% @sales.each do |sale| %>
             <tr>
-              <td><%= sale.product %></td>
-              <td><%= sale.variant %></td>
-              <td><%= !sale.start.nil? ? sale.start.to_datetime : nil %></td>
-              <td><%= !sale.end.nil? ? sale.end.to_datetime : nil %></td>
-              <td><%= sale.price %></td>
+              <td><%= @product_names[sale.product].title %></td>
+              <td><%= @variant_names[sale.variant].title %></td>
+              <td><%= !sale.start.nil? ? sale.start.to_formatted_s(:long_with_time) : nil %></td>
+              <td><%= !sale.end.nil? ? sale.end.to_formatted_s(:long_with_time) : nil %></td>
+              <td>$<%= sale.price.round.to_f %></td>
               <td><a href="#" class="small white button radius editbutton">Edit</a></td>
               <td><%= link_to "Delete", sale_path(sale), :remote => true, :method => :delete, :confirm => 'Are you sure?', :class => "small white button radius deletebutton" %></td>
             </tr>
