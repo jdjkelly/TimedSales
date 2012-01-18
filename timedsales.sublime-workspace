@@ -1,0 +1,293 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"back",
+				"backgroundNew"
+			],
+			[
+				"list",
+				"list-style:   (property)"
+			],
+			[
+				"list-style",
+				"list-style-type:   (property)"
+			],
+			[
+				"respon",
+				"respond_to"
+			],
+			[
+				"pa",
+				"parents  (function)"
+			],
+			[
+				"ele",
+				"ele  (argument)"
+			],
+			[
+				"attr",
+				"attr  (function)"
+			],
+			[
+				"inde",
+				"index  (function)"
+			],
+			[
+				"app",
+				"appendTo  (function)"
+			],
+			[
+				"h4",
+				"h4>  (element)"
+			],
+			[
+				"end",
+				"end: end (ERB)"
+			],
+			[
+				"ready",
+				"ready  (function)"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 372.0,
+		"selected_items":
+		[
+			[
+				"Package Control: In",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 542.0
+	},
+	"console":
+	{
+		"height": 122.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/joshkelly/Desktop/Work/RobotFuture/source/_includes/custom/head.html",
+		"/Users/joshkelly/Desktop/Work/RobotFuture/source/_posts/2012-01-15-protest-on-the-wire.markdown",
+		"/Users/joshkelly/Desktop/Work/RobotFuture/source/_posts/2012-01-15-from-project-management-to-project-leadership.markdown",
+		"/Users/joshkelly/Desktop/Work/RobotFuture/CNAME",
+		"/Users/joshkelly/Desktop/Work/RobotFuture/source/CNAME",
+		"/Users/joshkelly/Desktop/Work/RobotFuture/source/_includes/custom/head",
+		"/Users/joshkelly/Desktop/Work/RobotFuture/sass/custom/_styles.scss",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/controllers/home_controller.rb",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/views/home/index.html.erb",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/views/home/_sales.html.erb",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/controllers/products_controller.rb",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/controllers/sales_controller.rb",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/assets/javascripts/ui.js",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/assets/stylesheets/tables.css.scss",
+		"/Users/joshkelly/Desktop/Work/RobotFuture/Gemfile",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/views/sales/destroy.js.erb",
+		"/Users/joshkelly/Desktop/Work/timedsales/db/migrate/20120115212945_add_compare_to_to_sale.rb",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/views/sales/show.js.erb",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/views/sales/_sale.html.erb",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/assets/javascripts/application.js",
+		"/Users/joshkelly/Desktop/Work/timedsales/Gemfile",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/assets/javascripts/home.js",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/views/sales/show.html.erb",
+		"/Users/joshkelly/Desktop/Work/timedsales/db/schema.rb",
+		"/Users/joshkelly/Desktop/Work/blog/app/views/posts/index.html.erb",
+		"/Users/joshkelly/Desktop/Work/blog/app/views/home/index.html.erb",
+		"/Users/joshkelly/Desktop/Work/timedsales/test/fixtures/shops.yml",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/controllers/login_controller.rb",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/views/login/index.html.erb",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/models/sale.rb",
+		"/Users/joshkelly/Desktop/Work/timedsales/db/development.sqlite3",
+		"/Users/joshkelly/Desktop/Work/timedsales/db/migrate/20120114155510_create_shops.rb",
+		"/Users/joshkelly/Desktop/Work/timedsales/db/migrate/20120114222415_add_id_to_shops.rb",
+		"/Users/joshkelly/Desktop/Work/timedsales/db/migrate/20120114153848_sales.rb",
+		"/Users/joshkelly/Desktop/Work/timedsales/db/migrate/20120114154725_shops.rb",
+		"/Users/joshkelly/Desktop/Work/timedsales/db/migrate/20120114174235_add_tokens_to_shops.rb",
+		"/Users/joshkelly/Desktop/Work/timedsales/db/migrate/20120114155607_create_sales.rb",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/views/sales/_form.html.erb",
+		"/Users/joshkelly/Library/Caches/Cleanup At Startup/Transmit/890EC207-BFC2-477F-AF6D-B382E2AF2BBB/wp-config.php",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/assets/stylesheets/forms.css.scss",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/models/shop.rb",
+		"/Users/joshkelly/Desktop/Work/timedsales/config/routes.rb",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/assets/stylesheets/layout.css.scss",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/assets/stylesheets/datepicker.css.scss",
+		"/Users/joshkelly/Downloads/wood_pattern.png",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/views/layouts/application.html.erb",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/assets/stylesheets/application.css",
+		"/Users/joshkelly/Desktop/Work/timedsales/config/environment.rb",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/views/sales/new.html.erb",
+		"/Users/joshkelly/Desktop/Work/timedsales/db/migrate/20120108034724_create_sales.rb",
+		"/Users/joshkelly/Desktop/Work/blog/db/schema.rb",
+		"/Users/joshkelly/Desktop/Work/blog/app/models/post.rb",
+		"/Users/joshkelly/Desktop/Work/blog/app/models/co",
+		"/Users/joshkelly/Desktop/Work/blog/app/models/tag.rb",
+		"/Users/joshkelly/Desktop/Work/blog/app/models/comment.rb",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/views/products/index.html.erb",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/views/products/show.html.erb",
+		"/Users/joshkelly/Desktop/Work/pixelprinter/app/controllers/print_templates_controller.rb",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/views/home/welcome.html.erb",
+		"/Users/joshkelly/Desktop/Work/timedsales/README",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/helpers/tabs_helper.rb",
+		"/Users/joshkelly/Desktop/Work/tout.io/db/schema.rb",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/controllers/application_controller.rb",
+		"/Users/joshkelly/Desktop/Work/blog/app/views/tags/_form.html.erb",
+		"/Users/joshkelly/Desktop/Work/blog/app/helpers/posts_helper.rb",
+		"/Users/joshkelly/Desktop/Work/blog/app/views/posts/show.html.erb",
+		"/Users/joshkelly/Desktop/Work/blog/app/views/posts/_form.html.erb",
+		"/Users/joshkelly/Desktop/Work/blog/app/views/comments/_comment.html.erb",
+		"/Users/joshkelly/Desktop/Work/blog/app/controllers/posts_controller.rb",
+		"/Users/joshkelly/Desktop/Work/blog/app/controllers/comments_controller.rb",
+		"/Users/joshkelly/Desktop/Work/blog/app/views/comments/_form.html.erb",
+		"/Users/joshkelly/Desktop/Work/blog/config/routes.rb",
+		"/Users/joshkelly/Desktop/Work/blog/db/migrate/20120107195506_create_comments.rb",
+		"/Users/joshkelly/Desktop/Work/blog/app/views/layouts/application.html.erb",
+		"/Users/joshkelly/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/joshkelly/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings",
+		"/Users/joshkelly/Desktop/Work/blog/config/database.yml",
+		"/Users/joshkelly/Dropbox/Moveable1.pcf.vpn.vpn"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"11",
+			"savebut",
+			"chzn-select {\n	width:100%;\n}",
+			"<!DOCTYPE html>\n<html>\n<head>\n  <title>Tout.io | Timed Sales</title>\n  <%= stylesheet_link_tag 'foundation' %>\n  <%= javascript_include_tag 'foundation' %>\n  <%= csrf_meta_tags %>\n</head>\n\n<body>\n  <div class=\"container\">\n  <div id=\"header\">\n    <h1><%= link_to 'Timed Sales', '/' %></h1>\n    \n    <p id=\"login-link\">\n      <% if current_shop %>\n          <span class=\"note\">current shop</span> <%= link_to current_shop.url, \"https://#{current_shop.url}\", :class => 'shop_name' %> <span class=\"note\">|</span>\n          <%= link_to 'logout', logout_path %>\n      <% end %>\n    </p>\n  </div>\n\n  <div id=\"container\" class=\"clearfix\">\n    <ul id=\"tabs\">\n      <%= tab :index, {:controller => '/home'}, :label => 'Home' %>\n    </ul>\n    \n    <!-- Flash error & notice-->\n    <% if flash[:error] %> <div id=\"flasherrors\"><%= flash[:error] %></div><% end %>\n    <% if flash[:notice] %><div id=\"flashnotices\"><%= flash[:notice] %></div><% end %>\n  \n    <!-- begin div.main-->\n    <div id=\"main\">\n      <%= yield %>\n    </div>\n    <!-- end div.main -->\n  </div>\n  </div>\n</body>\n</html>\n",
+			"foundation",
+			"require",
+			"console"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 28.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/Users/joshkelly/Desktop/Work/timedsales/app/views/home/untitled"
+			],
+			[
+				"in",
+				"app/views/home/index.html.erb"
+			],
+			[
+				"index",
+				"app/views/home/index.html.erb"
+			],
+			[
+				"inde",
+				"app/views/home/index.html.erb"
+			],
+			[
+				"forms",
+				"app/assets/stylesheets/forms.css.scss"
+			],
+			[
+				"index.",
+				"app/views/home/index.html.erb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 197.0,
+	"status_bar_visible": true
+}

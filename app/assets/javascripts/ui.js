@@ -94,6 +94,11 @@ $(document).ready(function() {
     $(this).closest('tr').fadeOut();
   });
   
-  $('.upcoming table').tablesorter(); 
+  $('.upcoming table').tablesorter({
+     sortList: [[2,0]] 
+    
+  }); 
+
+
   
 });

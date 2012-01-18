@@ -13,6 +13,17 @@ class SalesController < ApplicationController
 
   def show
     @sale = Sale.find(params[:id])
+
+    @names = Hash.new
+    if !@sale.nil? 
+      product = @sale.product
+      product_name = ShopifyAPI::Product.find(product, :params => {:fields => "title"})
+      @names[product] = product_name
+
+      variant = @sale.variant
+      variant_name = ShopifyAPI::Variant.find(variant, :params => {:fields => "title"})
+      @names[variant] = variant_name 
+    end
   end
 
   # POST /sales
