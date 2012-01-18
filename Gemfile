@@ -8,6 +8,8 @@ gem 'shopify_app'
 gem 'zurb-foundation'
 gem 'chosen-rails'
 gem 'jquery-tablesorter'
+gem 'delayed_job_active_record'
+
 
 # Gems used only for assets and not required
 # in production environments by default.

@@ -55,6 +55,73 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 699,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/sales_controller.rb",
+			"settings":
+			{
+				"buffer_size": 1571,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/sales/_sale.html.erb",
+			"settings":
+			{
+				"buffer_size": 708,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/home/_sales.html.erb",
+			"settings":
+			{
+				"buffer_size": 1333,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/home/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 2389,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/initializers/time_formats.rb",
+			"settings":
+			{
+				"buffer_size": 57,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/ui.js",
+			"settings":
+			{
+				"buffer_size": 3149,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "/*\n * Metadata - jQuery plugin for parsing metadata from elements\n *\n * Copyright (c) 2006 John Resig, Yehuda Katz, Jörn Zaefferer, Paul McLanahan\n *\n * Dual licensed under the MIT and GPL licenses:\n *   http://www.opensource.org/licenses/mit-license.php\n *   http://www.gnu.org/licenses/gpl.html\n *\n */\n\n/**\n * Sets the type of metadata to use. Metadata is encoded in JSON, and each property\n * in the JSON will become a property of the element itself.\n *\n * There are three supported types of metadata storage:\n *\n *   attr:  Inside an attribute. The name parameter indicates *which* attribute.\n *          \n *   class: Inside the class attribute, wrapped in curly braces: { }\n *   \n *   elem:  Inside a child element (e.g. a script tag). The\n *          name parameter indicates *which* element.\n *          \n * The metadata for an element is loaded the first time the element is accessed via jQuery.\n *\n * As a result, you can define the metadata type, use $(expr) to load the metadata into the elements\n * matched by expr, then redefine the metadata type and run another $(expr) for other elements.\n * \n * @name $.metadata.setType\n *\n * @example <p id=\"one\" class=\"some_class {item_id: 1, item_label: 'Label'}\">This is a p</p>\n * @before $.metadata.setType(\"class\")\n * @after $(\"#one\").metadata().item_id == 1; $(\"#one\").metadata().item_label == \"Label\"\n * @desc Reads metadata from the class attribute\n * \n * @example <p id=\"one\" class=\"some_class\" data=\"{item_id: 1, item_label: 'Label'}\">This is a p</p>\n * @before $.metadata.setType(\"attr\", \"data\")\n * @after $(\"#one\").metadata().item_id == 1; $(\"#one\").metadata().item_label == \"Label\"\n * @desc Reads metadata from a \"data\" attribute\n * \n * @example <p id=\"one\" class=\"some_class\"><script>{item_id: 1, item_label: 'Label'}</script>This is a p</p>\n * @before $.metadata.setType(\"elem\", \"script\")\n * @after $(\"#one\").metadata().item_id == 1; $(\"#one\").metadata().item_label == \"Label\"\n * @desc Reads metadata from a nested script element\n * \n * @param String type The encoding type\n * @param String name The name of the attribute to be used to get metadata (optional)\n * @cat Plugins/Metadata\n * @descr Sets the type of encoding to be used when loading metadata for the first time\n * @type undefined\n * @see metadata()\n */\n\n(function($) {\n\n$.extend({\n	metadata : {\n		defaults : {\n			type: 'class',\n			name: 'metadata',\n			cre: /({.*})/,\n			single: 'metadata'\n		},\n		setType: function( type, name ){\n			this.defaults.type = type;\n			this.defaults.name = name;\n		},\n		get: function( elem, opts ){\n			var settings = $.extend({},this.defaults,opts);\n			// check for empty string in single property\n			if ( !settings.single.length ) settings.single = 'metadata';\n			\n			var data = $.data(elem, settings.single);\n			// returned cached data if it already exists\n			if ( data ) return data;\n			\n			data = \"{}\";\n			\n			if ( settings.type == \"class\" ) {\n				var m = settings.cre.exec( elem.className );\n				if ( m )\n					data = m[1];\n			} else if ( settings.type == \"elem\" ) {\n				if( !elem.getElementsByTagName )\n					return undefined;\n				var e = elem.getElementsByTagName(settings.name);\n				if ( e.length )\n					data = $.trim(e[0].innerHTML);\n			} else if ( elem.getAttribute != undefined ) {\n				var attr = elem.getAttribute( settings.name );\n				if ( attr )\n					data = attr;\n			}\n			\n			if ( data.indexOf( '{' ) <0 )\n			data = \"{\" + data + \"}\";\n			\n			data = eval(\"(\" + data + \")\");\n			\n			$.data( elem, settings.single, data );\n			return data;\n		}\n	}\n});\n\n/**\n * Returns the metadata object for the first member of the jQuery object.\n *\n * @name metadata\n * @descr Returns element's metadata object\n * @param Object opts An object contianing settings to override the defaults\n * @type jQuery\n * @cat Plugins/Metadata\n */\n$.fn.metadata = function( opts ){\n	return $.metadata.get( this[0], opts );\n};\n\n})(jQuery);",
+			"file": "app/assets/javascripts/jquery.metadata.js",
+			"file_size": 3868,
+			"file_write_time": 1326860543000000,
+			"settings":
+			{
+				"buffer_size": 3867,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -84,6 +151,8 @@
 	},
 	"file_history":
 	[
+		"/Users/joshkelly/Desktop/Work/timedsales/app/assets/javascripts/jquery.tableSorter.customDate.js",
+		"/Users/joshkelly/Dropbox/Moveable/ws/setup_process",
 		"/Users/joshkelly/Desktop/Work/RobotFuture/source/_includes/custom/head.html",
 		"/Users/joshkelly/Desktop/Work/RobotFuture/source/_posts/2012-01-15-protest-on-the-wire.markdown",
 		"/Users/joshkelly/Desktop/Work/RobotFuture/source/_posts/2012-01-15-from-project-management-to-project-leadership.markdown",
@@ -203,8 +272,226 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Gemfile",
+					"settings":
+					{
+						"buffer_size": 699,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								494,
+								494
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/controllers/sales_controller.rb",
+					"settings":
+					{
+						"buffer_size": 1571,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								618,
+								618
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 136.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/sales/_sale.html.erb",
+					"settings":
+					{
+						"buffer_size": 708,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								411,
+								411
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/home/_sales.html.erb",
+					"settings":
+					{
+						"buffer_size": 1333,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								956,
+								956
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/views/home/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 2389,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "config/initializers/time_formats.rb",
+					"settings":
+					{
+						"buffer_size": 57,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								57,
+								57
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/assets/javascripts/ui.js",
+					"settings":
+					{
+						"buffer_size": 3149,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2593,
+								2593
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 834.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/assets/javascripts/jquery.metadata.js",
+					"settings":
+					{
+						"buffer_size": 3867,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								609,
+								609
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -288,6 +575,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 197.0,
+	"side_bar_width": 259.0,
 	"status_bar_visible": true
 }
