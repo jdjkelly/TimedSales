@@ -1,0 +1,38 @@
+class Sale < ActiveRecord::Base
+
+	attr_accessor :start_delay
+	attr_accessor :end_delay
+
+	def timers
+		@start_delay = self.start
+		@end_delay = self.end
+		start_sale
+		end_sale
+	end
+
+	def start_sale
+		@shop = Shop.find(self.shop_id)
+
+		ShopifyAPI::Session.temp(@shop.name, @shop.token) do
+			sale = ShopifyAPI::Variant.find(self.variant)
+			sale.compare_at_price = sale.price
+			sale.price = self.price
+			sale.save
+		end
+	end
+	handle_asynchronously :start_sale, :run_at => Proc.new { |s| s.start_delay }
+
+	def end_sale
+		@shop = Shop.find(self.shop_id)
+
+		ShopifyAPI::Session.temp(@shop.name, @shop.token) do
+			sale = ShopifyAPI::Variant.find(self.variant)
+			sale.price = sale.compare_at_price
+			sale.compare_at_price = nil
+			sale.save
+		end
+	end
+	handle_asynchronously :end_sale, :run_at => Proc.new { |s| s.end_delay }
+
+
+end

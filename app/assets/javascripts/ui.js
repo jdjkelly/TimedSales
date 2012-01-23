@@ -34,11 +34,7 @@ $(document).ready(function() {
   });
 
   //init time pickers
-  $("#start_time, #end_time").timePicker({
-	  startTime: "00:00", // Using string. Can take string or Date object.
-	  show24Hours: false,
-  	separator: ':',
-  	step: 30});
+  $("#start_time, #end_time").timepicker({ 'scrollDefaultNow': true });
 
   //bind login button to form submit
   $(".login-form .form-submit").bind("click", function() {
@@ -71,24 +67,13 @@ $(document).ready(function() {
   $(".savebutton").bind("click", function() {
     $(this).parents("form").submit();
 
-    $("#new_sale").bind('ajax:success', function(evt, data, status, xhr){
-
-    if (data !== null) {
-      // select.removeAttr('disabled');
-      // select.children().remove();
-      // $.each(data.variants, function(index) {
-      //   $("<option/>").appendTo(select);
-      //   $("<option/>").val(data.variants[index].id).text(data.variants[index].title).appendTo(select);
-      // });
-      // select.trigger("liszt:updated");
-    // } else {
-    //   select.empty();
-    //   select.attr('disabled', 'disabled');
-    // }
-      alert(data)
-    }
-  });
+   
   })
+
+  $("#new_sale").bind('ajax:success', function(evt, data, status, xhr){
+      if (data !== null) {
+      }
+  });
 
   $(".deletebutton").live('ajax:success', function(evt, data, status, xhr){
     $(this).closest('tr').fadeOut();
@@ -98,7 +83,4 @@ $(document).ready(function() {
      sortList: [[2,0]] 
     
   }); 
-
-
-  
 });

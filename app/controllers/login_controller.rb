@@ -29,7 +29,12 @@ class LoginController < ApplicationController
       session[:shopify] = shopify_session
       session[:shop_name] = params[:shop]
 
-      shop = Shop.find_or_create_by_name_and_api_url(params[:shop], shopify_session.site)
+      ShopifyAPI::Session.temp(params[:shop], params[:t]) do
+        regex_this = ShopifyAPI::Shop.current.timezone
+        @timezone = regex_this.scan(/(\W...\W\d+\W\d+\W) (\w.+)/)[0][1]
+      end
+     
+      shop = Shop.find_or_create_by_name_and_api_url_and_token_and_timezone(params[:shop], shopify_session.site, params[:t], @timezone)
 
       flash[:notice] = "Successfully syncronchized with your Shopify store. Go ahead and create a new sale!"
 

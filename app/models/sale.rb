@@ -6,4 +6,5 @@ class Sale < ActiveRecord::Base
   	validates :price, 	:presence => true
   	validates :start, 	:presence => true
   	validates :end,		:presence => true
-end
+
+end 
