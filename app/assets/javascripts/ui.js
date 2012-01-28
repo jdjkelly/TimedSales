@@ -70,8 +70,9 @@ $(document).ready(function() {
    
   })
 
-  $("#new_sale").bind('ajax:success', function(evt, data, status, xhr){
+  $("#new_sale").live('ajax:success', function(evt, data, status, xhr){
       if (data !== null) {
+       
       }
   });
 

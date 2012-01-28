@@ -1,7 +1,7 @@
 			<tr style="display:none;">
 
-              <td><%= @names[@sale.product].title %></td>
-              <td><%= @names[@sale.variant].title %></td>
+              <td><%= !@names[@sale.product].title.nil? ? @names[@sale.product].title : nil %></td>
+              <td><%= !@names[@sale.variant].title.nil? ? @names[@sale.variant].title : nil %></td>
               <td><%= !@sale.start.nil? ? @sale.start.to_formatted_s(:long_with_time) : nil %></td>
               <td><%= !@sale.end.nil? ? @sale.end.to_formatted_s(:long_with_time) : nil %></td>
               <td><%= number_to_currency(@sale.price, :unit => "$") %></td>

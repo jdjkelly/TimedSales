@@ -49,8 +49,7 @@ class SalesController < ApplicationController
         format.html { redirect_to @sale, notice: 'Sale was successfully created.' }
         format.json { render json: @sale, status: :created, location: @sale }
       else
-      
-        format.json { render json: @sale.errors, status: :unprocessable_entity }
+        format.js { respond_with(@sale.errors) }
       end
     end
   end
@@ -62,7 +61,5 @@ class SalesController < ApplicationController
       format.js { render :nothing => true }
     end
   end
-
-  
 
 end

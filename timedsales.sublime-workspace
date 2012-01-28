@@ -60,14 +60,6 @@
 	"buffers":
 	[
 		{
-			"file": "app/controllers/login_controller.rb",
-			"settings":
-			{
-				"buffer_size": 1900,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/controllers/sales_controller.rb",
 			"settings":
 			{
@@ -76,42 +68,18 @@
 			}
 		},
 		{
-			"file": "app/assets/javascripts/jquery.timePicker.min.js",
+			"file": "app/controllers/home_controller.rb",
 			"settings":
 			{
-				"buffer_size": 6010,
+				"buffer_size": 1017,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/assets/javascripts/ui.js",
+			"file": "app/controllers/login_controller.rb",
 			"settings":
 			{
-				"buffer_size": 2605,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/assets/javascripts/products.js.coffee",
-			"settings":
-			{
-				"buffer_size": 229,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/assets/stylesheets/timepicker.css.scss",
-			"settings":
-			{
-				"buffer_size": 1816,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/jobs/sale.rb",
-			"settings":
-			{
-				"buffer_size": 830,
+				"buffer_size": 1900,
 				"line_ending": "Unix"
 			}
 		},
@@ -119,7 +87,7 @@
 			"file": "app/views/sales/_sale.html.erb",
 			"settings":
 			{
-				"buffer_size": 619,
+				"buffer_size": 703,
 				"line_ending": "Unix"
 			}
 		},
@@ -127,23 +95,55 @@
 			"file": "app/views/home/_sales.html.erb",
 			"settings":
 			{
-				"buffer_size": 1895,
+				"buffer_size": 1993,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/assets/stylesheets/layout.css.scss",
+			"file": "Gemfile",
 			"settings":
 			{
-				"buffer_size": 272,
+				"buffer_size": 577,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/sales/show.js.erb",
+			"file": "app/assets/javascripts/application.js",
 			"settings":
 			{
-				"buffer_size": 658,
+				"buffer_size": 564,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/initializers/client_side_validations.rb",
+			"settings":
+			{
+				"buffer_size": 636,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/home/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 2398,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/sale.rb",
+			"settings":
+			{
+				"buffer_size": 124,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/person.rb",
+			"settings":
+			{
+				"buffer_size": 74,
 				"line_ending": "Unix"
 			}
 		}
@@ -176,23 +176,26 @@
 	},
 	"file_history":
 	[
-		"/Users/joshkelly/Desktop/Work/timedsales/db/development.sqlite3",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/views/home/index.html.erb",
+		"/Users/joshkelly/Desktop/Work/timedsales/log/development.log",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/controllers/login_controller.rb",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/assets/javascripts/jquery.timePicker.min.js",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/assets/javascripts/ui.js",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/assets/javascripts/products.js.coffee",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/assets/stylesheets/timepicker.css.scss",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/jobs/sale.rb",
 		"/Users/joshkelly/Desktop/Work/timedsales/app/views/sales/_sale.html.erb",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/views/home/_sales.html.erb",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/assets/stylesheets/layout.css.scss",
+		"/Users/joshkelly/Desktop/Work/timedsales/app/views/sales/show.js.erb",
+		"/Users/joshkelly/Desktop/Work/timedsales/db/development.sqlite3",
 		"/Users/joshkelly/Desktop/Work/timedsales/Gemfile",
 		"/Users/joshkelly/Desktop/Work/timedsales/app/models/sale.rb",
-		"/Users/joshkelly/Desktop/Work/timedsales/app/jobs/sale.rb",
 		"/Users/joshkelly/Desktop/Work/timedsales/app/controllers/sales_controller.rb",
-		"/Users/joshkelly/Desktop/Work/timedsales/app/assets/javascripts/jquery.timePicker.min.js",
 		"/Users/joshkelly/Desktop/Work/timedsales/db/migrate/20120122185044_add_timezome_to_shops.rb",
 		"/Users/joshkelly/Desktop/Work/timedsales/config/schedule.rb",
-		"/Users/joshkelly/Desktop/Work/timedsales/app/assets/stylesheets/layout.css.scss",
-		"/Users/joshkelly/Desktop/Work/timedsales/app/assets/javascripts/ui.js",
 		"/Users/joshkelly/Desktop/Work/timedsales/db/migrate/20120114155510_create_shops.rb",
 		"/Users/joshkelly/Desktop/Work/timedsales/db/migrate/20120121205150_add_token_to_shops.rb",
-		"/Users/joshkelly/Desktop/Work/timedsales/app/controllers/login_controller.rb",
-		"/Users/joshkelly/Desktop/Work/timedsales/log/development.log",
-		"/Users/joshkelly/Desktop/Work/timedsales/app/views/home/_sales.html.erb",
-		"/Users/joshkelly/Desktop/Work/timedsales/app/views/home/index.html.erb",
 		"/Users/joshkelly/Desktop/Work/timedsales/config/initializers/time_formats.rb",
 		"/Users/joshkelly/Desktop/Work/timedsales/app/assets/javascripts/jquery.metadata.js",
 		"/Users/joshkelly/Desktop/Work/timedsales/app/assets/javascripts/jquery.tableSorter.customDate.js",
@@ -210,7 +213,6 @@
 		"/Users/joshkelly/Desktop/Work/RobotFuture/Gemfile",
 		"/Users/joshkelly/Desktop/Work/timedsales/app/views/sales/destroy.js.erb",
 		"/Users/joshkelly/Desktop/Work/timedsales/db/migrate/20120115212945_add_compare_to_to_sale.rb",
-		"/Users/joshkelly/Desktop/Work/timedsales/app/views/sales/show.js.erb",
 		"/Users/joshkelly/Desktop/Work/timedsales/app/assets/javascripts/application.js",
 		"/Users/joshkelly/Desktop/Work/timedsales/app/assets/javascripts/home.js",
 		"/Users/joshkelly/Desktop/Work/timedsales/app/views/sales/show.html.erb",
@@ -315,39 +317,11 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 10,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/controllers/login_controller.rb",
-					"settings":
-					{
-						"buffer_size": 1900,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1706,
-								1719
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 226.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "app/controllers/sales_controller.rb",
 					"settings":
 					{
@@ -369,133 +343,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 350.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/assets/javascripts/jquery.timePicker.min.js",
-					"settings":
-					{
-						"buffer_size": 6010,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6010,
-								6010
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 42420.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "app/assets/javascripts/ui.js",
+					"buffer": 1,
+					"file": "app/controllers/home_controller.rb",
 					"settings":
 					{
-						"buffer_size": 2605,
+						"buffer_size": 1017,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2295,
-								2295
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 590.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/assets/javascripts/products.js.coffee",
-					"settings":
-					{
-						"buffer_size": 229,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/assets/stylesheets/timepicker.css.scss",
-					"settings":
-					{
-						"buffer_size": 1816,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1109,
-								1109
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 65.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/jobs/sale.rb",
-					"settings":
-					{
-						"buffer_size": 830,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								822,
-								822
+								874,
+								874
 							]
 						],
 						"settings":
@@ -510,19 +376,47 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "app/views/sales/_sale.html.erb",
+					"buffer": 2,
+					"file": "app/controllers/login_controller.rb",
 					"settings":
 					{
-						"buffer_size": 619,
+						"buffer_size": 1900,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								418,
-								418
+								1271,
+								1258
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 272.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/sales/_sale.html.erb",
+					"settings":
+					{
+						"buffer_size": 703,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								223,
+								223
 							]
 						],
 						"settings":
@@ -536,19 +430,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 4,
 					"file": "app/views/home/_sales.html.erb",
 					"settings":
 					{
-						"buffer_size": 1895,
+						"buffer_size": 1993,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								504,
-								504
+								1273,
+								1273
 							]
 						],
 						"settings":
@@ -558,25 +452,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 17.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "app/assets/stylesheets/layout.css.scss",
+					"buffer": 5,
+					"file": "Gemfile",
 					"settings":
 					{
-						"buffer_size": 272,
+						"buffer_size": 577,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								270,
-								270
+								417,
+								417
 							]
 						],
 						"settings":
@@ -590,26 +484,130 @@
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "app/views/sales/show.js.erb",
+					"buffer": 6,
+					"file": "app/assets/javascripts/application.js",
 					"settings":
 					{
-						"buffer_size": 658,
+						"buffer_size": 564,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								528,
-								528
+								545,
+								545
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/JavaScript (Rails).tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "config/initializers/client_side_validations.rb",
+					"settings":
+					{
+						"buffer_size": 636,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								634,
+								634
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/views/home/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 2398,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								245,
+								245
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/models/sale.rb",
+					"settings":
+					{
+						"buffer_size": 124,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								31,
+								31
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/models/person.rb",
+					"settings":
+					{
+						"buffer_size": 74,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								74,
+								74
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -651,10 +649,6 @@
 		]
 	},
 	"menu_visible": true,
-	"output.exec":
-	{
-		"height": 25.0
-	},
 	"replace":
 	{
 		"height": 0.0

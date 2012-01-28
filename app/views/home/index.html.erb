@@ -4,6 +4,7 @@
 
 <% else %>
   <%= form_tag 'sales', :method => :post, :remote => true, :id => "new_sale", :class => "nice" do %> 
+    
     <div class="row">
       <div class="four columns">
         <h4>Which Product?</h4>
@@ -14,7 +15,7 @@
       </div>
       
       <div class="four columns">
-        <h4>When should it start & end?</h4>
+        <h4>When should it start &amp; end?</h4>
           <div class="row">
             <div class="six columns">
               <%= text_field_tag "start_date", nil, :id => "start_date", :class => "input-text small", :placeholder => "Start Date" %>

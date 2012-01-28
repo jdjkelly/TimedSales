@@ -1,0 +1,11 @@
+// Create a list of errors
+  $("#flasherrors").remove();
+
+  var errors = $('<ul />');
+
+  <% @sale.errors.full_messages.each do |error| %>
+    errors.append('<li><%= escape_javascript(error) %></li>');
+  <% end %>
+
+  // Display errors before the form
+  $('<div id="flasherrors" class="alert-box alert" style="display:none;"><%= flash[:error] %> />').html(errors).appendTo("#new_sale").fadeIn();
