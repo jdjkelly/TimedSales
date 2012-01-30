@@ -1,5 +1,7 @@
 class Sale < ActiveRecord::Base
 
+	belongs_to :shop
+
 	attr_accessor :start_delay
 	attr_accessor :end_delay
 
@@ -39,7 +41,5 @@ class Sale < ActiveRecord::Base
   	validates :price, :presence => true
   	validates :start, :presence => true
   	validates :end, :presence => true, :date => { :after => :start }
-
-  	belongs_to :shop
 
 end 
