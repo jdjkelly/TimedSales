@@ -39,7 +39,7 @@ class Sale < ActiveRecord::Base
 	validates :product, :presence => true
   	validates :variant, :presence => true
   	validates :price, :presence => true
-  	validates :start, :presence => true
+  	validates :start, :presence => true, :date => { :after => Time.now }
   	validates :end, :presence => true, :date => { :after => :start }
 
 end 
