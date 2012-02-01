@@ -29,6 +29,7 @@
  </div>
 
 <% else %>
+
 <hr/>
 <div class="row">
   <div class="twelve columns upcoming">
@@ -46,7 +47,11 @@
           </thead>
           <tbody>
             <% @sales.each do |sale| %>
-            <tr>
+            <% if sale.start < Time.now && sale.end > Time.now %>
+              <tr class="active">
+            <% else %>
+              <tr>
+            <% end %>
               <td><%= !@product_names[sale.product].title.nil? ? @product_names[sale.product].title : nil %></td>
               <td><%= !@variant_names[sale.variant].title.nil? ? @variant_names[sale.variant].title : nil %></td>
               <td><%= !sale.start.nil? ? sale.start.to_formatted_s(:long_with_time) : nil %></td>
