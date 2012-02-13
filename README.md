@@ -1,33 +1,13 @@
-== Tout.IO / Timed Sales
+What is Timed Sales?
+=============
 
-Timed Sales is a Shopify App to control store sales.
+Timed Sales is an open-source, free (as in speech **and** beer) Shopify application that gives merchants the ability to set sale start and end times for their products. 
 
-== Roadmap pre-0.1
+It features:
 
-  |-- Home/Dashboard
-      |-- Activity Log
-      |   |-- Name
-      |   `-- Description
-      `-- Sales
-          `-- Create
-              |-- Name
-              |-- Descrption
-              |-- Product
-              `-- Sale Price
-
-== Roadmap pre-0.2
-
-  |-- Home/Dashboard
-      |-- Activity Log
-      |   |-- Name
-      |   |-- Start Time
-      |   |-- End Time
-      |   `-- Description
-      `-- Sales
-          `-- Create
-              |-- Name
-              |-- Descrption
-              |-- Product
-              |-- Start Time
-              |-- End Time
-              `-- Sale Price
+* Rails 3.1
+* Shopify integration
+* ZURB Foundation (UI)
+* Client and model validation
+* Delayed_Job
+* Heroku deployment
