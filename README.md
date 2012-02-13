@@ -11,3 +11,8 @@ It features:
 * Client and model validation
 * Delayed_Job
 * Heroku deployment
+
+Deployment instructions
+-------------
+
+Coming soon.
