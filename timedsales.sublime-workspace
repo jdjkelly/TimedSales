@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"products",
+				"products"
+			],
+			[
 				"SH",
 				"ShopifyAPI"
 			],
@@ -63,7 +67,7 @@
 			"file": "app/controllers/sales_controller.rb",
 			"settings":
 			{
-				"buffer_size": 1704,
+				"buffer_size": 1735,
 				"line_ending": "Unix"
 			}
 		},
@@ -71,7 +75,7 @@
 			"file": "app/models/sale.rb",
 			"settings":
 			{
-				"buffer_size": 1109,
+				"buffer_size": 1163,
 				"line_ending": "Unix"
 			}
 		},
@@ -79,7 +83,7 @@
 			"file": "app/views/home/_sales.html.erb",
 			"settings":
 			{
-				"buffer_size": 2141,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -103,7 +107,55 @@
 			"file": "app/views/layouts/application.html.erb",
 			"settings":
 			{
-				"buffer_size": 1826,
+				"buffer_size": 1563,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/home_controller.rb",
+			"settings":
+			{
+				"buffer_size": 1347,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/home/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 2507,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "db/migrate/20120204205854_add_boolean_status_to_sale.rb",
+			"settings":
+			{
+				"buffer_size": 117,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/home/_sales_upcoming.html.erb",
+			"settings":
+			{
+				"buffer_size": 1411,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/home/_sales_active.html.erb",
+			"settings":
+			{
+				"buffer_size": 1407,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/home/_sales_previous.html.erb",
+			"settings":
+			{
+				"buffer_size": 1410,
 				"line_ending": "Unix"
 			}
 		}
@@ -136,6 +188,7 @@
 	},
 	"file_history":
 	[
+		"/Users/joshkelly/Desktop/Work/timedsales/app/views/layouts/login.html.erb",
 		"/Users/joshkelly/Desktop/Work/timedsales/app/views/home/_sales.html.erb",
 		"/Users/joshkelly/Desktop/Work/timedsales/app/assets/javascripts/ui.js",
 		"/Users/joshkelly/Desktop/Work/timedsales/app/views/sales/destroy.js.erb",
@@ -148,7 +201,6 @@
 		"/Users/joshkelly/Desktop/Work/timedsales/Gemfile.lock",
 		"/Users/joshkelly/Desktop/Work/timedsales/app/assets/stylesheets/fonts.css.scss",
 		"/Users/joshkelly/Desktop/Work/timedsales/app/views/layouts/application.html.erb",
-		"/Users/joshkelly/Desktop/Work/timedsales/app/views/layouts/login.html.erb",
 		"/Users/joshkelly/Desktop/Work/timedsales/Procfile",
 		"/Users/joshkelly/Desktop/Work/FUCK/app/models/person.rb",
 		"/Users/joshkelly/Desktop/Work/FUCK/db/migrate/20120128021201_create_people.rb",
@@ -289,7 +341,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -297,15 +349,15 @@
 					"file": "app/controllers/sales_controller.rb",
 					"settings":
 					{
-						"buffer_size": 1704,
+						"buffer_size": 1735,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1170,
-								1170
+								1199,
+								1199
 							]
 						],
 						"settings":
@@ -315,7 +367,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 219.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -325,15 +377,15 @@
 					"file": "app/models/sale.rb",
 					"settings":
 					{
-						"buffer_size": 1109,
+						"buffer_size": 1163,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1034,
-								1034
+								798,
+								798
 							]
 						],
 						"settings":
@@ -352,15 +404,15 @@
 					"file": "app/views/home/_sales.html.erb",
 					"settings":
 					{
-						"buffer_size": 2141,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1061,
-								1061
+								0,
+								0
 							]
 						],
 						"settings":
@@ -370,7 +422,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 302.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -419,7 +471,8 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -432,15 +485,180 @@
 					"file": "app/views/layouts/application.html.erb",
 					"settings":
 					{
-						"buffer_size": 1826,
+						"buffer_size": 1563,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								515,
-								515
+								999,
+								999
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/controllers/home_controller.rb",
+					"settings":
+					{
+						"buffer_size": 1347,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								527,
+								527
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/views/home/index.html.erb",
+					"settings":
+					{
+						"buffer_size": 2507,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2473,
+								2473
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 174.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "db/migrate/20120204205854_add_boolean_status_to_sale.rb",
+					"settings":
+					{
+						"buffer_size": 117,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								106,
+								106
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/views/home/_sales_upcoming.html.erb",
+					"settings":
+					{
+						"buffer_size": 1411,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								75,
+								83
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/views/home/_sales_active.html.erb",
+					"settings":
+					{
+						"buffer_size": 1407,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								373,
+								373
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "app/views/home/_sales_previous.html.erb",
+					"settings":
+					{
+						"buffer_size": 1410,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1410,
+								1410
 							]
 						],
 						"settings":
@@ -538,6 +756,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 343.0,
+	"side_bar_width": 222.0,
 	"status_bar_visible": true
 }

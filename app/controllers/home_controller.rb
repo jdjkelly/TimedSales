@@ -1,11 +1,22 @@
 class HomeController < ApplicationController
   	around_filter :shopify_session
   	def index
-	    # get 250 products
-	    @products 		= ShopifyAPI::Product.find(:all, :params => {:limit => 250})
-	    @sales 			= Sale.find_all_by_shop_id(Shop.find_by_name(session[:shop_name]).id)
-	    
+  		# how many products
+  		@product_count   = ShopifyAPI::Product.count
+  		@pages			 = (@product_count / 250.0).ceil
+
+  		# get products
+  		@products = Array.new
+		1.upto(@pages) do |page|
+			api_response = ShopifyAPI::Product.find(:all, :params => {:limit => 250, :page => page})
+			@products += api_response
+		end
+
+		# get sales
+		@sales = Sale.find_all_by_shop_id(Shop.find_by_name(session[:shop_name]).id)
+
 	    if !@sales.nil? 
+	    	@previous = Sale.exists?(:status => "previous", :shop_id => Shop.find_by_name(session[:shop_name]).id)
 	    	# building a product name hash for existing sales data
 	    	@product_names  = Hash.new
 	    	 # building a variant name hash for existing sales data

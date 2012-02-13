@@ -40,6 +40,7 @@ class SalesController < ApplicationController
     @sale.end     = Chronic.parse(params[:end_date] + " " + params[:end_time])
     @sale.price   = params[:sale_price]
     @sale.shop_id = Shop.find_by_name(session[:shop_name]).id
+    @sale.status  = "upcoming"
 
     respond_to do |format|
       if @sale.save

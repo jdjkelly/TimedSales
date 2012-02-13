@@ -1,0 +1,35 @@
+
+<hr/>
+<div class="row">
+  <div class="twelve columns upcoming">
+      <h4>Upcoming Sales</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Variant</th>
+              <th class="{sorter: 'date'}">Start Date</th>
+              <th class="{sorter: 'date'}">End Date</th>
+              <th>Price</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @sales.each do |sale| %>
+            <% if sale.start < Time.now && sale.end > Time.now %>
+              <tr class="active">
+            <% else %>
+              <tr>
+            <% end %>
+              <td><%= !@product_names[sale.product].title.nil? ? @product_names[sale.product].title : nil %></td>
+              <td><%= !@variant_names[sale.variant].title.nil? ? @variant_names[sale.variant].title : nil %></td>
+              <td><%= !sale.start.nil? ? sale.start.to_formatted_s(:long_with_time) : nil %></td>
+              <td><%= !sale.end.nil? ? sale.end.to_formatted_s(:long_with_time) : nil %></td>
+              <td><%= number_to_currency(sale.price, :unit => "$") %></td>
+              <td><%= link_to "Delete", sale_path(sale), :remote => true, :method => :delete, :confirm => 'Are you sure?', :class => "small white button radius deletebutton" %></td>
+            </tr>
+            <% end %>
+          </tbody>
+        </table>
+  </div>
+ </div>

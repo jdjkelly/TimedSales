@@ -50,4 +50,6 @@
 <% end %>
 </div>
 
-<%= render 'sales' %>
+<%= if !@active.blank? render 'sales_active' %>
+<%= render 'sales_upcoming' %>
+<%= if !@previous.blank? render 'sales_previous' %>

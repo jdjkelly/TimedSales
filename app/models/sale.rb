@@ -19,6 +19,7 @@ class Sale < ActiveRecord::Base
 			sale = ShopifyAPI::Variant.find(self.variant)
 			sale.compare_at_price = sale.price
 			sale.price = self.price
+			sale.status = "active"
 			sale.save
 		end
 	end
@@ -31,6 +32,7 @@ class Sale < ActiveRecord::Base
 			sale = ShopifyAPI::Variant.find(self.variant)
 			sale.price = sale.compare_at_price
 			sale.compare_at_price = nil
+			sale.status = "previous"
 			sale.save
 		end
 	end
