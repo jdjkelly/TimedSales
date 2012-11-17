@@ -23,8 +23,8 @@ ActiveRecord::Schema.define(:version => 20120204205854) do
     t.datetime "failed_at"
     t.string   "locked_by"
     t.string   "queue"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
   end
 
   add_index "delayed_jobs", ["priority", "run_at"], :name => "delayed_jobs_priority"
@@ -36,8 +36,8 @@ ActiveRecord::Schema.define(:version => 20120204205854) do
     t.datetime "end"
     t.decimal  "price"
     t.integer  "shop_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
     t.decimal  "compare_at"
     t.string   "status"
   end
@@ -47,8 +47,8 @@ ActiveRecord::Schema.define(:version => 20120204205854) do
   create_table "shops", :force => true do |t|
     t.string   "api_url"
     t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
     t.string   "token"
     t.string   "timezone"
   end
