@@ -10,11 +10,12 @@ group :assets do
   gem 'sass-rails'
   gem 'coffee-rails'
   gem 'uglifier'
+  gem 'compass-rails'
+  gem 'zurb-foundation'
 end
 
 gem 'jquery-rails'
 gem 'shopify_app'
-gem 'zurb-foundation'
 gem 'chosen-rails'
 gem 'jquery-tablesorter'
 gem 'delayed_job_active_record'

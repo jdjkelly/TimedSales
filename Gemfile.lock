@@ -47,6 +47,8 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
+    compass-rails (1.0.3)
+      compass (>= 0.12.2, < 0.14)
     date_validator (0.6.3)
       activemodel (~> 3.0)
     delayed_job (3.0.4)
@@ -167,6 +169,7 @@ DEPENDENCIES
   chosen-rails
   chronic
   coffee-rails
+  compass-rails
   date_validator
   delayed_job_active_record
   jquery-rails
