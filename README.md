@@ -10,7 +10,6 @@ It features:
 * ZURB Foundation (UI)
 * Client and model validation
 * Delayed_Job
-* Heroku deployment
 
 Deployment instructions
 -------------
