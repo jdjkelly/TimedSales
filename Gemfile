@@ -21,6 +21,8 @@ gem 'jquery-tablesorter'
 gem 'delayed_job_active_record'
 gem 'chronic'
 gem 'date_validator'
+gem 'rest-client'
+gem 'pry'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
@@ -29,6 +31,8 @@ group :test do
   # Pretty printed test output
   gem 'turn', '0.8.2', :require => false
 end
+
+gem 'quiet_assets', :group => :development
 
 group :production do
 	gem 'pg'

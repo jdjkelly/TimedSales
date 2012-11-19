@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120204205854) do
+ActiveRecord::Schema.define(:version => 20121119001836) do
 
   create_table "delayed_jobs", :force => true do |t|
     t.integer  "priority",   :default => 0
@@ -51,6 +51,7 @@ ActiveRecord::Schema.define(:version => 20120204205854) do
     t.datetime "updated_at", :null => false
     t.string   "token"
     t.string   "timezone"
+    t.integer  "shopify_id"
   end
 
 end

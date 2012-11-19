@@ -21,8 +21,8 @@
       
         <div class="six columns">
           <p id="login-link">
-            <% if current_shop %>
-                <span class="note">Logged in as</span> <%= link_to current_shop.url, "https://#{current_shop.url}", :class => 'shop_name' %> <span class="note">|</span>
+            <% if @current_shop.present? %>
+                <span class="note">Logged in as</span> <%= link_to @current_shop.url, "https://#{@current_shop.url}", :class => 'shop_name' %> <span class="note">|</span>
                 <%= link_to 'logout', logout_path %>
             <% end %>
           </p>

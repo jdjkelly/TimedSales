@@ -11,7 +11,7 @@
     
         <%= select_tag "product", options_from_collection_for_select(@products, "id", "title"), :class => "chzn-select", :id => "new-product", :include_blank => true, "data-placeholder" => "Select a Product", "data-remote" => true, "data-url" => "/products/get_variants", "data-type" => :json %>
     
-        <%= select_tag "variant", nil, :class => "chzn-select", :id => "new-variant", :include_blank => true, :disabled => true, "data-placeholder" => "Select a Variant", "data-remote" => true, "data-url" => "/products/get_pricing", "data-type" => :json %>
+        <%= select_tag "variant", nil, { :class => "chzn-select", :id => "new-variant",  :disabled => true, "data-placeholder" => "Select a Variant", "data-remote" => true, "data-url" => "/products/get_pricing", "data-type" => :json } %>
       </div>
       
       <div class="four columns">
@@ -50,6 +50,6 @@
 <% end %>
 </div>
 
-<%= if !@active.blank? render 'sales_active' %>
+<%= render 'sales_active' if @active.present? %>
 <%= render 'sales_upcoming' %>
-<%= if !@previous.blank? render 'sales_previous' %>
+<%= render 'sales_previous'if @previous.present? %>
