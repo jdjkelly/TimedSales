@@ -39,9 +39,9 @@ class Sale < ActiveRecord::Base
 	handle_asynchronously :end_sale, :run_at => Proc.new { |s| s.end_delay }
 
 	validates :product, :presence => true
-  	validates :variant, :presence => true
-  	validates :price, :presence => true
-  	validates :start, :presence => true, :date => { :after => Time.now }
-  	validates :end, :presence => true, :date => { :after => :start }
+	validates :variant, :presence => true
+	validates :price, :presence => true
+	validates :start, :presence => true, :date => { :after => Time.now }
+	validates :end, :presence => true, :date => { :after => :start }
 
 end 

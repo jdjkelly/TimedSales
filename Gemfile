@@ -30,6 +30,10 @@ gem 'pry'
 group :test do
   # Pretty printed test output
   gem 'turn', '0.8.2', :require => false
+  gem 'rspec-rails'
+  gem 'ZenTest'
+  gem 'autotest-rails'
+  gem 'fabrication'
 end
 
 gem 'quiet_assets', :group => :development
