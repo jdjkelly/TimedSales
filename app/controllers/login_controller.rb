@@ -1,6 +1,6 @@
 class LoginController < ApplicationController
   def index
-    redirect_to :controller => 'home', :action => 'index' if session[:shopify_session]
+    redirect_to :controller => 'home', :action => 'index' if session[:shopify_session].present? && session[:shopify_session].valid?
     # Ask user for their #{shop}.myshopify.com address
     
     # If the #{shop}.myshopify.com address is already provided in the URL, just skip to #authenticate
@@ -50,7 +50,7 @@ class LoginController < ApplicationController
   end
   
   def logout
-    session[:shopify_session] = nil
+    ShopifyAPI::Base.clear_session
     reset_session
     flash[:notice] = "Successfully logged out."
     

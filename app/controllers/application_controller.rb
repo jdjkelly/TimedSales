@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
   end
 
   def check_shopify_session
-    redirect_to :controller => 'login', :action => 'index' unless session[:shopify_session]
+    redirect_to :controller => 'login', :action => 'index' unless session[:shopify_session].present? && session[:shopify_session].valid?
   end
 
   def set_current_shop
