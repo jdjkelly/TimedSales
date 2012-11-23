@@ -23,6 +23,7 @@ gem 'chronic'
 gem 'date_validator'
 gem 'rest-client'
 gem 'pry'
+gem 'newrelic_rpm'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'

@@ -11,7 +11,11 @@ class ApplicationController < ActionController::Base
   end
 
   def check_shopify_session
-    redirect_to :controller => 'login', :action => 'index' unless session[:shopify_session].present? && session[:shopify_session].valid?
+    if session[:shopify_session].present? && session[:shopify_session].valid?
+      ShopifyAPI::Base.activate_session(session[:shopify_session]) unless ShopifyAPI::Base.site.present?
+    else
+      redirect_to :controller => 'login', :action => 'index'
+    end
   end
 
   def set_current_shop

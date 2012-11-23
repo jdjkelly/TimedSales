@@ -64,6 +64,7 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    fabrication (2.5.0)
     faraday (0.8.4)
       multipart-post (~> 1.1)
     fssm (0.2.9)
@@ -91,6 +92,7 @@ GEM
       sassy-math (>= 1.2)
     multi_json (1.3.7)
     multipart-post (1.1.5)
+    newrelic_rpm (3.5.2.17)
     oauth2 (0.8.0)
       faraday (~> 0.8)
       httpauth (~> 0.1)
@@ -200,8 +202,10 @@ DEPENDENCIES
   compass-rails
   date_validator
   delayed_job_active_record
+  fabrication
   jquery-rails
   jquery-tablesorter
+  newrelic_rpm
   pg
   pry
   quiet_assets

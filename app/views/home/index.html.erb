@@ -3,50 +3,52 @@
  <h4>Whoops, you don't have any products!</h4> You'll need some before you're able to make sales :)
 
 <% else %>
-  <%= form_tag 'sales', :method => :post, :remote => true, :id => "new_sale", :class => "nice" do %> 
-    
-    <div class="row">
-      <div class="four columns">
-        <h4>Which Product?</h4>
-    
-        <%= select_tag "product", options_from_collection_for_select(@products, "id", "title"), :class => "chzn-select", :id => "new-product", :include_blank => true, "data-placeholder" => "Select a Product", "data-remote" => true, "data-url" => "/products/get_variants", "data-type" => :json %>
-    
-        <%= select_tag "variant", nil, { :class => "chzn-select", :id => "new-variant",  :disabled => true, "data-placeholder" => "Select a Variant", "data-remote" => true, "data-url" => "/products/get_pricing", "data-type" => :json } %>
-      </div>
+  <div class="twelve columns">
+    <%= form_tag 'sales', :method => :post, :remote => true, :id => "new_sale", :class => "nice" do %> 
       
-      <div class="four columns">
-        <h4>When should it start &amp; end?</h4>
-          <div class="row">
-            <div class="six columns">
-              <%= text_field_tag "start_date", nil, :id => "start_date", :class => "input-text small", :placeholder => "Start Date" %>
+      <div class="row">
+        <div class="four columns">
+          <h4>Which Product?</h4>
+      
+          <%= select_tag "product", options_from_collection_for_select(@products, "id", "title"), :class => "chzn-select", :id => "new-product", :include_blank => true, "data-placeholder" => "Select a Product", "data-remote" => true, "data-url" => "/products/get_variants", "data-type" => :json %>
+      
+          <%= select_tag "variant", nil, { :class => "chzn-select", :id => "new-variant",  :disabled => true, "data-placeholder" => "Select a Variant", "data-remote" => true, "data-url" => "/products/get_pricing", "data-type" => :json } %>
+        </div>
+        
+        <div class="four columns">
+          <h4>When should it start &amp; end?</h4>
+            <div class="row">
+              <div class="six columns">
+                <%= text_field_tag "start_date", nil, :id => "start_date", :class => "input-text small", :placeholder => "Start Date" %>
+              </div>
+              <div class="six columns">
+                <%= text_field_tag "start_time", nil, :id => "start_time", :class => "input-text small", :placeholder => "Start Time" %>
+              </div>
             </div>
-            <div class="six columns">
-              <%= text_field_tag "start_time", nil, :id => "start_time", :class => "input-text small", :placeholder => "Start Time" %>
+         
+            <div class="row">
+              <div class="six columns">
+                <%= text_field_tag "end_date", nil, :id => "end_date", :class => "input-text small", :placeholder => "End Date" %>
+              </div>
+              <div class="six columns">
+                <%= text_field_tag "end_time", nil, :id => "end_time", :class => "input-text small", :placeholder => "End Time" %>
+              </div>
             </div>
-          </div>
-       
-          <div class="row">
-            <div class="six columns">
-              <%= text_field_tag "end_date", nil, :id => "end_date", :class => "input-text small", :placeholder => "End Date" %>
+        </div>
+        <div class="two columns">
+          <h4>How much?</h4>
+            <div class="row">
+              <div class="twelve columns prepended">
+                <span class="add-on">$</span>
+                <%= text_field_tag "sale_price", nil, :id => "sale_price", :class => "input-text mini", :placeholder => "Sale Price" %>
+              </div>
             </div>
-            <div class="six columns">
-              <%= text_field_tag "end_time", nil, :id => "end_time", :class => "input-text small", :placeholder => "End Time" %>
-            </div>
-          </div>
-      </div>
-      <div class="two columns">
-        <h4>How much?</h4>
-          <div class="row">
-            <div class="twelve columns prepended">
-              <span class="add-on">$</span>
-              <%= text_field_tag "sale_price", nil, :id => "sale_price", :class => "input-text mini", :placeholder => "Sale Price" %>
-            </div>
-          </div>
-      </div>
-      <div class="two columns">
-        <a href="#" class="blue button radius savebutton">Save Sale</a>
-      </div>
-  <% end %>
+        </div>
+        <div class="two columns">
+          <a href="#" class="blue button radius savebutton">Save Sale</a>
+        </div>
+    <% end %>
+  </div>
 <% end %>
 </div>
 

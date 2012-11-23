@@ -1,0 +1,2 @@
+Fabricator(:shop) do
+end

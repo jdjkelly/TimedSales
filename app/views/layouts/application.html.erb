@@ -18,7 +18,6 @@
           <h1><%= link_to 'Timed Sales', '/' %></h1>
         </div>
       
-      
         <div class="six columns">
           <p id="login-link">
             <% if @current_shop.present? %>
@@ -32,9 +31,19 @@
     </div>
         
         <div class="row">
-        <!-- Flash error & notice-->
-        <% if flash[:error] %> <div id="flasherrors" class="alert-box warning"><%= flash[:error] %><a href="" class="close">×</a></div><% end %>
-        <% if flash[:notice] %><div id="flashnotices"  class="alert-box"><%= flash[:notice] %><a href="" class="close">×</a></div><% end %>
+          <div class="twelve columns">
+            <% if flash[:error] %>
+              <div id="flasherrors" class="alert-box warning">
+                <%= flash[:error] %>
+                <a href="" class="close">×</a>
+              </div><% end %>
+            <% if flash[:notice] %>
+              <div id="flashnotices" class="alert-box">
+                <%= flash[:notice] %>
+                <a href="" class="close">×</a>
+              </div
+            <% end %>
+          </div>
         </div>
       
         <!-- begin div.main-->
